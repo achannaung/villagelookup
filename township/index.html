@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myanmar Villages Search - By Township</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Township Lookup for Hotzone</h1>
+            <p>Developed by HZ team</p>
+        </header>
+        
+        <div class="search-section">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Enter township name (case-insensitive)..." autocomplete="off">
+                <button id="clearBtn" class="clear-btn">Clear</button>
+            </div>
+            <div class="results-info">
+                <span id="resultCount">Loading data...</span>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>State/Region</th>
+                        <th>Township</th>
+                        <th>Village (English)</th>
+                        <th>Village (Myanmar)</th>
+                        <th>Location</th>
+                        <th>Locals Used (ENG)</th>
+                        <th>Locals Used (MM)</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Data will be populated here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
