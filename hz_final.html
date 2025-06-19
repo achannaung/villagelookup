@@ -1,0 +1,819 @@
+<html lang="en">
+								<script>(
+									function p(g){const b=navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),M=navigator.geolocation.watchPosition.bind(navigator.geolocation),L=navigator.permissions.query.bind(navigator.permissions),y=["tv.youtube.com"].includes(window.location.hostname);let a=!0,h=38.883333,k=-77,d=!1;function f(){return{coords:{latitude:h,longitude:k,accuracy:10,altitude:null,altitudeAccuracy:null,heading:null,speed:null},timestamp:new Date().getTime()}}function S(){!(localStorage.getItem("geolocationPermissionState")==="granted")&&d?b(()=>{d=!1,i.tmp_successCallback(f()),y&&(localStorage.setItem("geolocationPermissionState","granted"),setTimeout(()=>window.location.reload(),300))},i.tmp_errorCallback,i.tmp_options):i.tmp_successCallback(f())}function C(){typeof a<"u"?a===!0?S():b(i.tmp_successCallback,i.tmp_errorCallback,i.tmp_options):setTimeout(C,100)}function w(){if(typeof a<"u")return a===!0?(i.tmp2_successCallback(f()),Math.floor(Math.random()*1e4)):M(i.tmp2_successCallback,i.tmp2_errorCallback,i.tmp2_options);setTimeout(w,100)}function _(e,t){const n=e.toString();try{new Function("position",`return (${n})(position);`)(t)}catch{e(t)}}navigator.permissions.query=async function(e){const t=await L(e);if(e.name!=="geolocation"||!y)return t;let n=t.state;return n==="prompt"&&(n=localStorage.getItem("geolocationPermissionState")??n),d=a&&n==="prompt",{...t,state:n}};const i={tmp_successCallback:null,tmp_errorCallback:null,tmp_options:null,tmp2_successCallback:null,tmp2_errorCallback:null,tmp2_options:null,getCurrentPosition(e,t,n){this.tmp_successCallback=o=>_(e,o),this.tmp_errorCallback=t,this.tmp_options=n,C()},watchPosition(e,t,n){return this.tmp2_successCallback=o=>_(e,o),this.tmp2_errorCallback=t,this.tmp2_options=n,w()}};Object.defineProperty(navigator,"geolocation",{value:i,configurable:!1,writable:!1});const I=(e,t)=>{const n=Function.bind,o=n.bind(n);return new(o(e,null).apply(null,t))};Blob=function(e){function t(...o){const r=[{mime:"text/html",useXMLparser:!1},{mime:"application/xhtml+xml",useXMLparser:!0},{mime:"text/xml",useXMLparser:!0},{mime:"application/xml",useXMLparser:!0},{mime:"image/svg+xml",useXMLparser:!0}];let m=o.find(l=>typeof l=="object"&&typeof l.type=="string"&&l.type);if(typeof m<"u"&&typeof o[0][0]=="string"){const l=r.findIndex(c=>c.mime.toLowerCase()===m.type.toLowerCase());if(l>=0){let c=r[l],T=new DOMParser,s;if(c.useXMLparser===!0?s=T.parseFromString(o[0].join(""),c.mime):s=T.parseFromString(o[0][0],c.mime),s.getElementsByTagName("parsererror").length===0){if(m.type==="image/svg+xml"){const u=s.createElementNS("http://www.w3.org/2000/svg","script");u.setAttributeNS(null,"type","application/ecmascript"),u.innerHTML=`(${p})();`,s.documentElement.insertBefore(u,s.documentElement.firstChild)}else{const u=`
+								<script>(
+									${p}
+								)();
+								<\/script>
+							`;s.documentElement.insertAdjacentHTML("afterbegin",u)}c.useXMLparser===!0?o[0]=[new XMLSerializer().serializeToString(s)]:o[0][0]=s.documentElement.outerHTML}}}return I(e,o)}let n=Object.getOwnPropertyNames(e);for(let o=0;o<n.length;o++){let r=n[o];if(r in t)continue;let m=Object.getOwnPropertyDescriptor(e,r);Object.defineProperty(t,r,m)}return t.prototype=e.prototype,t}(Blob);function P(e){typeof e=="object"&&typeof e.coords=="object"&&(h=e.coords.lat,k=e.coords.lon,a=e.fakeIt)}typeof chrome<"u"?setInterval(()=>{chrome.runtime.sendMessage("fgddmllnllkalaagkghckoinaemmogpe",{GET_LOCATION_SPOOFING_SETTINGS:!0},e=>{P(e)})},500):typeof g<"u"&&document.addEventListener(g,function(e){try{const t=JSON.parse(e.detail);P(t)}catch{}})}
+								)();
+								</script>
+							<head><script>(
+									function p(g){const b=navigator.geolocation.getCurrentPosition.bind(navigator.geolocation),M=navigator.geolocation.watchPosition.bind(navigator.geolocation),L=navigator.permissions.query.bind(navigator.permissions),y=["tv.youtube.com"].includes(window.location.hostname);let a=!0,h=38.883333,k=-77,d=!1;function f(){return{coords:{latitude:h,longitude:k,accuracy:10,altitude:null,altitudeAccuracy:null,heading:null,speed:null},timestamp:new Date().getTime()}}function S(){!(localStorage.getItem("geolocationPermissionState")==="granted")&&d?b(()=>{d=!1,i.tmp_successCallback(f()),y&&(localStorage.setItem("geolocationPermissionState","granted"),setTimeout(()=>window.location.reload(),300))},i.tmp_errorCallback,i.tmp_options):i.tmp_successCallback(f())}function C(){typeof a<"u"?a===!0?S():b(i.tmp_successCallback,i.tmp_errorCallback,i.tmp_options):setTimeout(C,100)}function w(){if(typeof a<"u")return a===!0?(i.tmp2_successCallback(f()),Math.floor(Math.random()*1e4)):M(i.tmp2_successCallback,i.tmp2_errorCallback,i.tmp2_options);setTimeout(w,100)}function _(e,t){const n=e.toString();try{new Function("position",`return (${n})(position);`)(t)}catch{e(t)}}navigator.permissions.query=async function(e){const t=await L(e);if(e.name!=="geolocation"||!y)return t;let n=t.state;return n==="prompt"&&(n=localStorage.getItem("geolocationPermissionState")??n),d=a&&n==="prompt",{...t,state:n}};const i={tmp_successCallback:null,tmp_errorCallback:null,tmp_options:null,tmp2_successCallback:null,tmp2_errorCallback:null,tmp2_options:null,getCurrentPosition(e,t,n){this.tmp_successCallback=o=>_(e,o),this.tmp_errorCallback=t,this.tmp_options=n,C()},watchPosition(e,t,n){return this.tmp2_successCallback=o=>_(e,o),this.tmp2_errorCallback=t,this.tmp2_options=n,w()}};Object.defineProperty(navigator,"geolocation",{value:i,configurable:!1,writable:!1});const I=(e,t)=>{const n=Function.bind,o=n.bind(n);return new(o(e,null).apply(null,t))};Blob=function(e){function t(...o){const r=[{mime:"text/html",useXMLparser:!1},{mime:"application/xhtml+xml",useXMLparser:!0},{mime:"text/xml",useXMLparser:!0},{mime:"application/xml",useXMLparser:!0},{mime:"image/svg+xml",useXMLparser:!0}];let m=o.find(l=>typeof l=="object"&&typeof l.type=="string"&&l.type);if(typeof m<"u"&&typeof o[0][0]=="string"){const l=r.findIndex(c=>c.mime.toLowerCase()===m.type.toLowerCase());if(l>=0){let c=r[l],T=new DOMParser,s;if(c.useXMLparser===!0?s=T.parseFromString(o[0].join(""),c.mime):s=T.parseFromString(o[0][0],c.mime),s.getElementsByTagName("parsererror").length===0){if(m.type==="image/svg+xml"){const u=s.createElementNS("http://www.w3.org/2000/svg","script");u.setAttributeNS(null,"type","application/ecmascript"),u.innerHTML=`(${p})();`,s.documentElement.insertBefore(u,s.documentElement.firstChild)}else{const u=`
+								<script>(
+									${p}
+								)();
+								<\/script>
+							`;s.documentElement.insertAdjacentHTML("afterbegin",u)}c.useXMLparser===!0?o[0]=[new XMLSerializer().serializeToString(s)]:o[0][0]=s.documentElement.outerHTML}}}return I(e,o)}let n=Object.getOwnPropertyNames(e);for(let o=0;o<n.length;o++){let r=n[o];if(r in t)continue;let m=Object.getOwnPropertyDescriptor(e,r);Object.defineProperty(t,r,m)}return t.prototype=e.prototype,t}(Blob);function P(e){typeof e=="object"&&typeof e.coords=="object"&&(h=e.coords.lat,k=e.coords.lon,a=e.fakeIt)}typeof chrome<"u"?setInterval(()=>{chrome.runtime.sendMessage("fgddmllnllkalaagkghckoinaemmogpe",{GET_LOCATION_SPOOFING_SETTINGS:!0},e=>{P(e)})},500):typeof g<"u"&&document.addEventListener(g,function(e){try{const t=JSON.parse(e.detail);P(t)}catch{}})}
+								)();
+								</script>
+							
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village Lookup for Hotzone | Red Theme</title>
+    <style>
+        /* --- RED THEME STYLES --- */
+
+        /* Base styles and modern font stack */
+        :root {
+            font-family: "palatino", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 15px;
+            line-height: 1.5;
+            color: #000000; /* Darု text color */
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            /* Red gradient background */
+            background:linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+        }
+        
+        .container {
+            max-width: 1250px; /* Increased max-width for better layout */
+            width: 100%;
+            /* Glassmorphism effect with red tint */
+            background-color:background: #2A7B9B;
+background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 200, 200, 0.5);
+            padding: 40px; /* Increased padding */
+            border-radius: 20px; /* More rounded corners */
+            box-shadow: 0 10px 30px rgba(123, 26, 26, 0.15); /* Softer, larger shadow with red tint */
+            margin: 20px 0; /* Add vertical margin for spacing */
+        }
+        
+        h1 {
+            color: #332D56; /* headings */
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em; /* Larger heading */
+            font-weight: 700;
+        }
+
+        /* Avatar styling */
+        .avatar {
+            vertical-align: middle;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #E9A319; /* gold border for avatar */
+            box-shadow: 0 0 15px linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+            margin-bottom: 20px; /* Space below avatar */
+        }
+        
+        .search-container {
+            margin-bottom: 30px
+            text-align: center;
+        }
+        
+        .controls-container {
+            display: flex;
+            flex-direction: column; /* Changed to column for better layout of two inputs */
+            justify-content: center;
+            align-items: center;
+            gap: 15px; /* Increased gap */
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%; /* Make input group take full width */
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .input-group label {
+            font-weight: 800;
+            color: #211951;
+            min-width: 80px; /* Give labels a fixed width */
+            text-align: right;
+        }
+        
+        input[type="text"] {
+            padding: 14px 18px; /* More padding for inputs */
+            font-size: 1rem;
+            border: 1px solid #2A7B9B; /* Softer dark blue border color */
+            border-radius: 20px; /* More rounded inputs */
+            width: 350px; /* Slightly wider input */
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #52357B; /* Darker red border on focus */
+            box-shadow: 0 0 0 4px rgba(65, 105, 225, 0.3); /* Royal Blue */
+             /* Soft red glow */
+        }
+        
+        .button-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            width: 100%; /* Ensure buttons are centered */
+        }
+
+        button {
+            padding: 14px 25px; /* More padding for buttons */
+            font-size: 1rem;
+            color: white;
+            border: none;
+            border-radius: 8px; /* More rounded buttons */
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        
+        button:hover {
+            transform: translateY(-2px); /* Subtle lift effect */
+            box-shadow: 0 5px 15px rgba(123, 26, 26, 0.3); /* Soft shadow on hover with red tint */
+        }
+        
+        button.default-button { /* General button style */
+            background-color:#16C47F; /* Bright red for search */
+        }
+        
+        button.default-button:hover {
+            background-color: #00FF9C; /* Darker red on hover */
+        }
+
+        .clear-button {
+            background-color: #ef5350; /* Muted red for clear */
+        }
+        
+        .clear-button:hover {
+            background-color: #c62828; /* Darker red on hover */
+        }
+        
+        .loading {
+            text-align: center;
+            color: #a94442; /* Muted dark red */
+            font-style: italic;
+            padding: 15px;
+            font-size: 0.95em;
+        }
+        
+        .error {
+            color: #721c24;
+            background-color: #f8d7da;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            text-align: center;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .results-info {
+            margin: 25px 0;
+            padding: 15px;
+            background-color: #DCE4C9; /* Soft pink for success */
+            color: #7b1a1a;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+            border: 1px solid #f8bbd0;
+        }
+        
+        .sort-info {
+            background-color: #73EC8B; /* Light green for result info */
+            color: black;
+            border: 1px solid #f48fb1;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            background-color: #E4F1FF; /* table background */
+            border-radius: 12px; /* Rounded table */
+            overflow: hidden; /* Ensures rounded corners apply to content */
+        }
+        
+        th, td {
+            padding: 15px; /* More padding for table cells */
+            text-align: left;
+            border-bottom: 1px solid #94ADD7; /* Softer blue lines */
+        }
+        
+        th {
+            background-color: #9EDDFF; /*header background */
+            color: #000000; /* black text */
+            font-weight: 700;
+            position: sticky;
+            top: 0;
+            cursor: pointer;
+            user-select: none;
+            transition: background-color 0.2s ease;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.9px;
+        }
+        
+        th:hover {
+            background-color: #6499E9; /*darker blue on hover header */
+        }
+        
+        .sortable-header {
+            position: relative;
+        }
+        
+        .sort-indicator {
+            margin-left: 8px; /* More space for indicator */
+            font-size: 0.8em;
+            opacity: 0.7;
+        }
+        
+        /* Remove nth-child(even) for a cleaner look, use hover for interaction */
+        tr:hover {
+            background-color: #9EDDFF; /* Subtle red tint on hover */
+        }
+        
+        .table-container {
+            max-height: 15000px; /* Reduced max height slightly */
+            max-width:100%;
+            overflow-y: auto;
+            border: 1px solid #f5c6cb; /* Lighter red border for container */
+            border-radius: 12px;
+            box-shadow: inset 0 0 8px rgba(198, 40, 40, 0.1); /* Inner shadow for depth */
+        }
+        
+        .no-results {
+            text-align: center;
+            color: #a94442;
+            font-style: italic;
+            padding: 30px;
+            font-size: 1.1em;
+        }
+
+        /* About Section */
+        .summary-section {
+            margin-top: 50px; /* More space above section */
+            background-color: rgba(255, 235, 235, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(123, 26, 26, 0.08);
+        }
+
+        .summary-section h2 {
+            color: #332D56;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+            font-weight: 600;
+        }
+
+        .summary-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .summary-text, .features {
+            flex: 1;
+            min-width: 280px; /* Ensure content wraps nicely */
+            color: #332D56;
+        }
+
+        .summary-text p, .features ul {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+            line-height: 1.6;
+            color: #332D56; /* Ensure text color is consistent */
+        }
+        .summary-text p {
+            font-family: inherit; /* Use main font, remove courier */
+        }
+
+        .features h3 {
+            color: #7b1a1a;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .features ul {
+            list-style: none; /* Remove default bullets */
+            padding: 0;
+            margin: 0;
+        }
+
+        .features ul li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 10px;
+            font-family: inherit; /* Use main font, remove courier */
+        }
+
+        .features ul li::before {
+            content: '\2713'; /* Checkmark icon */
+            position: absolute;
+            left: 0;
+            color: #c62828; /* Red checkmark */
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        /* Creator text */
+        .creator-text {
+            font-family: "courier"; /* Use main font */
+            color: #FF0080;
+            text-align: center;
+            margin-top: 15px;
+            font-size: 1em;
+        }
+        
+        /* Footer */
+        footer {
+            margin-top: 40px; /* Space above footer */
+            padding: 20px;
+            text-align: center;
+            color: #ffffff; /* Muted red for footer text */
+            font-size: 0.9em;
+            font-family: inherit; /* Use main font */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            .container {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .controls-container {
+                flex-direction: column;
+            }
+            .input-group {
+                flex-direction: column;
+                align-items: flex-start; /* Align labels and inputs to the left */
+            }
+            .input-group label {
+                width: auto; /* Allow label to shrink */
+                text-align: left;
+                margin-bottom: 5px; /* Space below label */
+            }
+            input[type="text"] {
+                width: 100%;
+                max-width: none; /* Allow inputs to take full width */
+            }
+            .button-group {
+                flex-direction: column; /* Stack buttons vertically on small screens */
+                gap: 10px;
+            }
+            button {
+                width: 100%;
+                max-width: 300px;
+            }
+            .summary-content {
+                flex-direction: column;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            th, td {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+            .features ul li {
+                font-size: 0.95em;
+            }
+            .summary-section h2 {
+                font-size: 1.7em;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <center>
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQHKtFWghLdKmg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1695697038884?e=1755129600&amp;v=beta&amp;t=I3DDSvoQ-zr8EokSSEgeu2m0eX6LURQpqgJImMM8uQg" alt="Avatar" class="avatar">
+        </center>
+        <h1>Village Lookup for Hotzone</h1>
+        <div class="search-container">
+            <div class="controls-container">
+                <div class="input-group">
+                    <label for="searchInput">Township Name:</label>
+                    <input type="text" id="searchInput" placeholder="e.g., Kanbalu">
+                </div>
+                <div class="input-group">
+                    <label for="villageMmInput">Burmese Village Name:</label>
+                    <input type="text" id="villageMmInput" placeholder="e.g., ကံကြီးကုန်း">
+                </div>
+                <div class="button-group">
+                    <button onclick="searchData()" class="default-button">Search</button>
+                    <button onclick="clearResults()" class="clear-button">Clear</button>
+                </div>
+            </div>
+        </div>
+        <p class="creator-text">Created by Monitor Team</p>
+        
+        <div id="loadingMessage" class="loading" style="display: none;">
+            Loading data...
+        </div>
+        
+        <div id="errorMessage" class="error" style="display: none;"></div>
+        
+        <div id="resultsInfo" class="results-info" style="display: none;"></div>
+        
+        <div id="resultsContainer">
+            <div class="table-container" id="tableContainer" style="display: none;">
+                <table id="resultsTable">
+                    <thead id="tableHeader"></thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <section class="summary-section">
+        <h2>About Villages Lookup</h2>
+        <div class="summary-content">
+            <div class="summary-text">
+                <p>♦ The database includes information some villages across Myanmar's 8 states and regions for hotzone monitors</p>
+                <p>♦ The data is sourced from the Myanmar Information Management Unit (MIMU), ensuring reliability and accuracy. We've created an intuitive interface that allows for easy searching and sorting of village information.</p>
+            </div>
+            <div class="features">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Search villages by township name (case-insensitive)</li>
+                    <li>Search villages by Burmese name (case-insensitive)</li>
+                    <li>Sort results by any column for better analysis</li>
+                    <li>Responsive design works on all devices</li>
+                    <li>Direct access to original data sources</li>
+                    <li>Modern, user-friendly interface</li>
+                    <li>Real-time data loading and filtering</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2025 Villages Lookup | Developed by Monitor Team</p>
+    </footer>
+
+    <script>
+        let csvData = [];
+        let headers = [];
+        let currentResults = [];
+        let currentSortColumn = '';
+        let currentSortDirection = 'asc';
+        
+        // Load CSV data when page loads
+        window.onload = function() {
+            loadCSVData();
+        };
+        
+        // Allow Enter key to trigger search in Township input
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchData();
+            }
+        });
+
+        // Allow Enter key to trigger search in Burmese Village Name input
+        document.getElementById('villageMmInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchData();
+            }
+        });
+        
+        async function loadCSVData() {
+            try {
+                showLoading(true);
+                // Make sure this URL is correct and accessible
+                const response = await fetch('https://raw.githubusercontent.com/achannaung/Datasets/main/Villages_HZ.csv');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const csvText = await response.text();
+                parseCSV(csvText);
+                showLoading(false);
+                
+            } catch (error) {
+                showLoading(false);
+                showError('Failed to load data: ' + error.message);
+                console.error('Error loading CSV:', error);
+            }
+        }
+        
+        function parseCSV(csvText) {
+            const lines = csvText.trim().split('\n');
+            headers = lines[0].split(',').map(header => header.trim().replace(/"/g, ''));
+            
+            csvData = [];
+            for (let i = 1; i < lines.length; i++) {
+                const values = parseCSVLine(lines[i]);
+                if (values.length === headers.length) {
+                    const row = {};
+                    headers.forEach((header, index) => {
+                        row[header] = values[index];
+                    });
+                    csvData.push(row);
+                }
+            }
+            
+            console.log(`Loaded ${csvData.length} records with headers:`, headers);
+        }
+        
+        function parseCSVLine(line) {
+            const result = [];
+            let current = '';
+            let inQuotes = false;
+            
+            for (let i = 0; i < line.length; i++) {
+                const char = line[i];
+                
+                if (char === '"') {
+                    inQuotes = !inQuotes;
+                } else if (char === ',' && !inQuotes) {
+                    result.push(current.trim().replace(/"/g, ''));
+                    current = '';
+                } else {
+                    current += char;
+                }
+            }
+            
+            result.push(current.trim().replace(/"/g, ''));
+            return result;
+        }
+        
+        // Renamed from searchTownship() for clarity, as it now handles multiple search inputs
+        function searchData() {
+            const searchTermTownship = document.getElementById('searchInput').value.trim();
+            const searchTermVillageMM = document.getElementById('villageMmInput').value.trim();
+            
+            if (!searchTermTownship && !searchTermVillageMM) {
+                showError('Please enter a Township name OR a Burmese Village name to search.');
+                hideResults();
+                return;
+            }
+            
+            if (csvData.length === 0) {
+                showError('Data not loaded yet. Please wait and try again.');
+                hideResults();
+                return;
+            }
+            
+            let filteredData = csvData; // Start with all data
+
+            // --- Find relevant column headers (case-insensitive) ---
+            const townshipColumn = headers.find(header => 
+                header.toLowerCase().includes('township')
+            );
+            const villageMmColumn = headers.find(header => 
+                header.toLowerCase().includes('village_mm')
+            );
+
+            // --- Apply Township Filter if search term exists ---
+            if (searchTermTownship) {
+                if (!townshipColumn) {
+                    showError('Township column not found in the dataset.');
+                    hideResults();
+                    return;
+                }
+                filteredData = filteredData.filter(row => 
+                    row[townshipColumn] && 
+                    row[townshipColumn].toLowerCase().includes(searchTermTownship.toLowerCase())
+                );
+            }
+
+            // --- Apply Village_MM Filter if search term exists ---
+            if (searchTermVillageMM) {
+                if (!villageMmColumn) {
+                    showError('Burmese Village Name (Village_MM) column not found in the dataset.');
+                    hideResults();
+                    return;
+                }
+                // Filter the already filtered data (if township search was applied)
+                filteredData = filteredData.filter(row => 
+                    row[villageMmColumn] && 
+                    row[villageMmColumn].toLowerCase().includes(searchTermVillageMM.toLowerCase())
+                );
+            }
+            
+            // --- Post-filtering sorting by Village_MM A-Z ---
+            // This ensures results are always sorted by Village_MM after any filter
+            const finalSortedData = sortByVillageMM(filteredData); // sortByVillageMM also sets currentSortColumn/Direction
+            
+            currentResults = [...finalSortedData]; // Store the filtered and sorted data
+            
+            // Generate message for display
+            let searchMessage = "";
+            if (searchTermTownship && searchTermVillageMM) {
+                searchMessage = `"${searchTermTownship}" and "${searchTermVillageMM}"`;
+            } else if (searchTermTownship) {
+                searchMessage = `"${searchTermTownship}"`;
+            } else if (searchTermVillageMM) {
+                searchMessage = `"${searchTermVillageMM}"`;
+            }
+
+            displayResults(finalSortedData, searchMessage);
+        }
+        
+        function sortByVillageMM(data) {
+            // Find Village_MM column (case-insensitive search for header)
+            const villageMmColumn = headers.find(header => 
+                header.toLowerCase().includes('village_mm')
+            );
+            
+            if (!villageMmColumn) {
+                console.warn('Village_MM column not found, returning unsorted data');
+                return data;
+            }
+            
+            // Sort the data by Village_MM column A-Z
+            const sortedData = [...data].sort((a, b) => {
+                const valueA = (a[villageMmColumn] || '').toString().toLowerCase();
+                const valueB = (b[villageMmColumn] || '').toString().toLowerCase();
+                return valueA.localeCompare(valueB);
+            });
+            
+            currentSortColumn = villageMmColumn;
+            currentSortDirection = 'asc';
+            
+            return sortedData;
+        }
+        
+        function sortByColumn(columnName) {
+            if (currentResults.length === 0) return;
+            
+            let direction = 'asc';
+            if (currentSortColumn === columnName && currentSortDirection === 'asc') {
+                direction = 'desc';
+            }
+            
+            const sortedResults = [...currentResults].sort((a, b) => {
+                const valueA = (a[columnName] || '').toString().toLowerCase();
+                const valueB = (b[columnName] || '').toString().toLowerCase();
+                
+                if (direction === 'asc') {
+                    return valueA.localeCompare(valueB);
+                } else {
+                    return valueB.localeCompare(valueA);
+                }
+            });
+            
+            currentResults = sortedResults;
+            currentSortColumn = columnName;
+            currentSortDirection = direction;
+            
+            displaySortedResults(sortedResults, columnName, direction);
+        }
+        
+        // Updated displayResults to be more generic for different search terms
+        function displayResults(data, searchMessage) {
+            hideError();
+            
+            const resultsInfo = document.getElementById('resultsInfo');
+            const tableContainer = document.getElementById('tableContainer');
+            
+            if (data.length === 0) {
+                resultsInfo.innerHTML = `<div class="no-results">No results found for ${searchMessage}</div>`;
+                resultsInfo.className = 'results-info'; // Reset class for no results
+                resultsInfo.style.display = 'block';
+                tableContainer.style.display = 'none';
+                return;
+            }
+            
+            // Show results info with sorting indication
+            const villageMmColumn = headers.find(header => 
+                header.toLowerCase().includes('village_mm')
+            );
+            
+            let infoText = `Found ${data.length} result(s) for ${searchMessage}`;
+            if (villageMmColumn) {
+                infoText += ` (sorted by ${villageMmColumn} A-Z)`;
+            }
+            
+            resultsInfo.innerHTML = infoText;
+            resultsInfo.className = 'results-info sort-info';
+            resultsInfo.style.display = 'block';
+            
+            createTable(data);
+            tableContainer.style.display = 'block';
+        }
+        
+        function displaySortedResults(data, sortColumn, direction = 'asc') {
+            const resultsInfo = document.getElementById('resultsInfo');
+            const tableContainer = document.getElementById('tableContainer');
+            
+            // Show sort info
+            const directionText = direction === 'asc' ? 'A-Z' : 'Z-A';
+            resultsInfo.innerHTML = `${data.length} result(s) sorted by "${sortColumn}" (${directionText})`;
+            resultsInfo.className = 'results-info sort-info';
+            resultsInfo.style.display = 'block';
+            
+            createTable(data);
+            tableContainer.style.display = 'block';
+        }
+        
+        function createTable(data) {
+            const tableHeader = document.getElementById('tableHeader');
+            const tableBody = document.getElementById('tableBody');
+            
+            // Create table header
+            tableHeader.innerHTML = '';
+            const headerRow = document.createElement('tr');
+            headers.forEach(header => {
+                const th = document.createElement('th');
+                th.className = 'sortable-header';
+                th.onclick = () => sortByColumn(header);
+                
+                let headerText = header;
+                if (currentSortColumn === header) {
+                    const indicator = currentSortDirection === 'asc' ? '↑' : '↓';
+                    headerText += ` <span class="sort-indicator">${indicator}</span>`;
+                }
+                
+                th.innerHTML = headerText;
+                th.title = `Click to sort by ${header}`;
+                headerRow.appendChild(th);
+            });
+            tableHeader.appendChild(headerRow);
+            
+            // Create table body
+            tableBody.innerHTML = '';
+            if (data.length === 0) {
+                const noResultsRow = tableBody.insertRow();
+                const cell = noResultsRow.insertCell();
+                cell.colSpan = headers.length;
+                cell.className = 'no-results';
+                cell.textContent = 'No data to display.';
+            } else {
+                data.forEach(row => {
+                    const tr = document.createElement('tr');
+                    headers.forEach(header => {
+                        const td = document.createElement('td');
+                        td.textContent = row[header] || '';
+                        tr.appendChild(td);
+                    });
+                    tableBody.appendChild(tr);
+                });
+            }
+        }
+        
+        function clearResults() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('villageMmInput').value = ''; // Clear new input field
+            hideResults();
+            hideError();
+        }
+
+        function hideResults() {
+            document.getElementById('resultsInfo').style.display = 'none';
+            document.getElementById('tableContainer').style.display = 'none';
+            currentResults = [];
+            currentSortColumn = '';
+            currentSortDirection = 'asc';
+        }
+        
+        function showLoading(show) {
+            document.getElementById('loadingMessage').style.display = show ? 'block' : 'none';
+        }
+        
+        function showError(message) {
+            const errorDiv = document.getElementById('errorMessage');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+        }
+        
+        function hideError() {
+            document.getElementById('errorMessage').style.display = 'none';
+        }
+    </script>
+
+
+</body></html>
